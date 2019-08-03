@@ -39,6 +39,8 @@ def infinite_loop?(list)
   end
 
   return false
+
+
 end
 
 node1 = LinkedListNode.new(37)
@@ -52,5 +54,5 @@ reverse_list(node3)
 print_values(node1)
 
 puts infinite_loop?(node3)
-node1.next_node = node3 # creates an infinite loop
+node1.next_node = node3 
 puts infinite_loop?(node3)
